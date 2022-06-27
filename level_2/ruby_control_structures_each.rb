@@ -13,3 +13,6 @@ Hint
 array.each do |user|
     user.update_score
 end
+
+#used user.update_score rather than update_score(user) because user is an object.
+
