@@ -42,3 +42,36 @@ Ruby Can also be treated as an stack and LIFO operation can be performed:-
 students.push "sowji"---> last in
 students.pop----> Last element inserted will be first out
 
+Ruby Array comparisions:-
+
+The == method returns true if two arrays contain the same number of elements and the same contents for each corresponding element.
+The eql? method is similar to the == method with the exception that the values in corresponding elements are of the same value type.
+
+Finally, the <=> method (also known as the "spaceship" method) compares two arrays and returns 0 if the arrays are equal, -1 one if the elements are less than those in the other array, and 1 if they are greater.
+
+Modifying Arrays:-
+using insert , it takes index number and value as parameter
+Arrays.insert(1,"sowji")---> sowji will be inserted as first index
+
+colors = ["red", "green", "blue"]
+=> ["red", "green", "blue"]=> ["red", "yellow", "blue"]--> green will be replaced with yellow
+
+multiple elements can be changed by using range:- colors = ["red", "green", "blue"]
+=> ["red", "green", "blue"]
+
+colors[1..2] = "orange", "pink"
+=> ["orange", "pink"]
+
+colors
+=> ["red", "orange", "pink"]
+
+Deleting Array elements:-
+based on index:- students.delete_at(1)
+based on the content:- students.delete("Sooraj")
+
+Sorting :-
+students.Sort
+students.sort!
+
+
+
