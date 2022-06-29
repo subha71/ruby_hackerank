@@ -4,3 +4,41 @@ Finding out information about array:- students.empty?, students.size, students[0
 Accessing array element:- students[0],students.at(0), students.first, students.last,students[-1]--> this will give last element
 Finding index of an element:- students.index("Subhakanta"), students.rindex("Subhakanta")--> Give last matching element in array
 Subset of an array:- students[1,3], students[1..3], students.slice(1..3)
+
+
+COMBINING RUBY ARRAYS:-
+1) days1 = ["Mon", "Tue", "Wed"]
+days2 = ["Thu", "Fri", "Sat", "Sun"]
+days = days1 + days2
+=> ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+2) days = days1.concat(days2)
+
+3)days1 = ["Mon", "Tue", "Wed"]
+days1 << "Thu" << "Fri" << "Sat" << "Sun"
+=> ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+INTERSECTION, UNION and DIFFERENCE of arrays:-
+operating_systems = ["Fedora", "SuSE", "RHEL", "Windows", "MacOS"]
+
+linux_systems = ["RHEL", "SuSE", "PCLinuxOS", "Ubuntu", "Fedora"]
+
+union:- operating_systems | linux_systems
+=> ["Fedora", "SuSE", "RHEL", "Windows", "MacOS", "PCLinuxOS", "Ubuntu"]---> also removed duplicate Items
+
+intersection:- operating_systems & linux_systems
+=> ["Fedora", "SuSE", "RHEL"]
+
+Difference:- operating_systems - linux_systems
+=> ["Windows", "MacOS"]
+
+Identify Unique array elements:-
+
+linux_systems.uniq--- but it will not save the output to source array 
+linux_systems.uniq!--- this will save the output to source array
+
+Ruby Can also be treated as an stack and LIFO operation can be performed:-
+
+students.push "sowji"---> last in
+students.pop----> Last element inserted will be first out
+
