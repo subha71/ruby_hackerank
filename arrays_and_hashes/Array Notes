@@ -1,0 +1,4 @@
+How to create array in ruby:- Array.new or Array.new(size)
+Populating an array with data:- students = Array.new(7,"Subhakanta"), Students = ["Subhakanta", "Subham", "Sooraj", "Prasanjeet"]
+Finding out information about array:- students.empty?, students.size, students[0].class
+Accessing array element:- students[0],students.at(0), students.first, students.last,students[-1]--> this will give last element
